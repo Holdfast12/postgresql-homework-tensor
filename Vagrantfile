@@ -27,7 +27,7 @@ Vagrant.configure("2") do |config|
           sudo yum install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm
           sudo yum install -y postgresql13 postgresql13-server
           SHELL
-        box.vm.provision "shell", path: boxconfig[:script]
+#       box.vm.provision "shell", path: boxconfig[:script]
     end
   end
 end
